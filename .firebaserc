@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "angular-sign-up-2e50e": {
+      "hosting": {
+        "angular-sign-up": [
+          "angular-sign-up-2e50e"
+        ]
+      }
+    },
+    "angular-sign-up-150c1": {
+      "hosting": {
+        "angular-sign-up": [
+          "angular-sign-up-150c1"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-sign-up-150c1"
+  }
+}

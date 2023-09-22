@@ -15,6 +15,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
+import { MatMenuModule } from '@angular/material/menu';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideAuth, getAuth } from '@angular/fire/auth';
 import { environment } from 'src/environments/environment.development';
@@ -40,7 +41,8 @@ import { environment } from 'src/environments/environment.development';
     AppRoutingModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebse)),
-    provideAuth(() => getAuth())
+    provideAuth(() => getAuth()),
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
